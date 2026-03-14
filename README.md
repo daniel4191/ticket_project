@@ -25,8 +25,4 @@
 ## 🚀 실행 및 테스트 방법 (Usage Guide)
 
 ### 1. 프로젝트 실행
-Docker와 Docker-Compose가 설치된 환경에서 아래 명령어를 실행합니다.
-```bash
-git clone [https://github.com/daniel4191/ticket_project.git](https://github.com/daniel4191/ticket_project.git)
-cd ticket_project
-docker-compose up --build -d
+(http://1.247.87.56:9090/swagger-ui/index.html)
