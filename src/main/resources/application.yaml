@@ -1,3 +1,24 @@
 spring:
   application:
     name: ticket-reservation
+
+  datasource:
+    # 3306이 아니라 우리가 매핑한 3304로 접속
+    url: jdbc:mysql://localhost:3304/ticket_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: ticketpass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    # Entity(Java 코드)를 바탕으로 DB 테이블을 자동으로 생성/수정해 주는 옵션
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
